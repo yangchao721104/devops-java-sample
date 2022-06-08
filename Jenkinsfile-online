@@ -9,7 +9,7 @@ pipeline {
         string(name:'TAG_NAME',defaultValue: '',description:'')
     }
 
-    environment {
+   environment {
         DOCKER_CREDENTIAL_ID = 'dockerhub-id'
         GITHUB_CREDENTIAL_ID = 'github-id'
         KUBECONFIG_CREDENTIAL_ID = 'demo-kubeconfig'
@@ -17,7 +17,7 @@ pipeline {
         DOCKERHUB_NAMESPACE = 'yangchao721104'
         GITHUB_ACCOUNT = 'yangchao721104'
         APP_NAME = 'devops-java-sample'
-        SONAR_CREDENTIAL = 'sonar-qube'
+        SONAR_CREDENTIAL_ID = 'sonar-qube'
     }
 
     stages {
